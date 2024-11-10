@@ -2,11 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    background-image:url("plane.jpg");
     box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
+    background-image: image(planestyle.jpg);
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f9;
@@ -16,7 +18,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #005f87;
+    background-color:#008726;
     color: white;
     padding: 20px;
     text-align: center;
@@ -78,7 +80,7 @@ h2 {
 
 .intro p {
     font-size: 1.2em;
-    color: #333;
+    color: #333333;
 }
 
 /* List Styling */
@@ -93,12 +95,12 @@ ul li {
 }
 
 ul li strong {
-    color: #005f87;
+    color: #008734;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #005f87;
+    background-color: #008765;
     color: white;
     text-align: center;
     padding: 10px;
