@@ -2,30 +2,28 @@
 * {
     margin: 0;
     padding: 0;
-    background-image:url("plane.jpg");
     box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    background-image: image(planestyle.jpg);
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
+    background-color: #f4f4f9; /* Soft light background */
+    color: #333; /* Dark text for readability */
 }
 
 /* Header Styling */
 header {
-    background-color:#008726;
+    background-color: #006d91; /* Aviation-related blue */
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 header nav ul {
@@ -35,18 +33,40 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    background-color: #e2f1f8; /* Light sky blue background */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #006d91;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #333;
 }
 
 /* Section Styling */
@@ -60,27 +80,18 @@ section {
 }
 
 h2 {
-    font-size: 2em;
-    color: #005f87;
-    margin-bottom: 10px;
-}
-
-/* Intro Section */
-.intro {
-    text-align: center;
-    background-color: #e7f2f8;
-    padding: 40px;
-    border-radius: 8px;
-}
-
-.intro h2 {
     font-size: 2.5em;
-    color: #004d6e;
+    color: #006d91; /* Consistent aviation blue */
+    margin-bottom: 15px;
 }
 
-.intro p {
-    font-size: 1.2em;
-    color: #333333;
+/* Image Styling */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* List Styling */
@@ -90,20 +101,20 @@ ul {
 }
 
 ul li {
-    padding: 5px;
+    padding: 10px;
     font-size: 1.1em;
 }
 
 ul li strong {
-    color: #008734;
+    color: #006d91;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #008765;
+    background-color: #006d91;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -111,4 +122,32 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
 }
